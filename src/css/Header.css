@@ -1,0 +1,48 @@
+nav {
+    background-color: #fff;
+    padding-left: 150px;
+    padding-right: 150px;
+    margin-bottom: 6px;
+    box-shadow: 1px 2px 4px rgba(0, 0, 0, .5);
+  }
+  
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+  
+  li a {
+    display: block;
+    color: rgb(0, 117, 235);
+    font-weight: bold;
+    text-align: center;
+    padding: 30px 25px;
+    text-decoration: none;
+  }
+  
+  li .left {
+    float: left;
+  }
+  
+  li .right {
+    float: right;
+  }
+  
+  .logo {
+    background-image: url('https://www.secfi.com/_next/static/images/logo-967c4d4305c18b2b9854ee38db4eb774.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 170px;
+    padding: 30px 100px;
+  }
+  
+  .logo:hover {
+    background-color: white;
+  }
+  
+  li a:hover {
+    color: white;
+    background-color: #516B8C;
+  }
