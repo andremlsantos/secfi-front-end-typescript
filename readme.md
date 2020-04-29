@@ -41,4 +41,4 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 - Hat tip to anyone whose code was used
 - Inspiration from TravisMedia React crash course and chart js,
 - Inspiration from <a href="https://codepen.io/seanstopnik/pen/CeLqA">CodePen CSS Range Slider</a>
-  #- Inspiration from <a href="https://codepen.io/FlorinPop17/pen/oNNYWxK">Exchange Rate Calculator</a>
+- Inspiration from <a href="https://codepen.io/FlorinPop17/pen/oNNYWxK">Exchange Rate Calculator</a>
