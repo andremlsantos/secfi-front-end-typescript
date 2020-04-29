@@ -98,6 +98,9 @@ export class AlphaVantageService implements IService {
               chartData: null,
             };
 
+            console.log(
+              "saving " + this.storage.getDailyKey(from, to) + "  to map"
+            );
             this.storage.saveDailyValue(from, to, result);
 
             return result;

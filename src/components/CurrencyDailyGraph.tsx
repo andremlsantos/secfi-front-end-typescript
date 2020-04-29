@@ -19,10 +19,8 @@ export class CurrencyDailyGraph extends Component<IState, ICurrencyDailyGraph> {
     const days: number = this.state.days;
 
     if (this.props.graphData) {
-      debugger;
       data = this.props.graphData;
     } else {
-      debugger;
       data = {
         chartData: {},
         close: [],
