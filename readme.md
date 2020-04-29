@@ -29,7 +29,7 @@ npm start
 
 - [React](https://reactjs.org/) - JavaScript library for building user interfaces. Latest version used as to date
 - [React-Charts-Js2](https://github.com/jerairrest/react-chartjs-2) - React wrapper for Chart.js 2 Open for PRs and contributions!
-- [TypeScript](https://nodejs.org/en/download/) - Main language
+- [TypeScript](https://www.typescriptlang.org/docs/handbook/typescript-in-5-minutes.html) - Main language
 - [NodeJs](https://nodejs.org/en/download/) - JavaScript runtime environment
 
 ## License
@@ -41,4 +41,4 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 - Hat tip to anyone whose code was used
 - Inspiration from TravisMedia React crash course and chart js,
 - Inspiration from <a href="https://codepen.io/seanstopnik/pen/CeLqA">CodePen CSS Range Slider</a>
-- Inspiration from <a href="https://codepen.io/FlorinPop17/pen/oNNYWxK">Exchange Rate Calculator</a>
+  #- Inspiration from <a href="https://codepen.io/FlorinPop17/pen/oNNYWxK">Exchange Rate Calculator</a>
