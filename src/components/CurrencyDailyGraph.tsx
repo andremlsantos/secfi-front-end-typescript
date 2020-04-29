@@ -115,6 +115,8 @@ export class CurrencyDailyGraph extends Component<IState, ICurrencyDailyGraph> {
     this.setState({
       days: parseInt(days),
     });
+
+    console.log("Updating graph data for ", days, " days");
   }
 
   filterData(arr: Array<string>, amount: number) {
