@@ -5,6 +5,7 @@ The idea is to create an interactive web application that allows users to displa
 ## Getting Started
 
 Claim your API_KEY Alpha Vantage API_KEY <a href="https://www.alphavantage.co/support/#api-key">here</a>
+Update App.tsx with your API_KEY
 
 ### Prerequisites
 
@@ -16,9 +17,7 @@ Install node.js first. Built with latest version
 
 ### Installing
 
-A step by step series of examples that tell you how to get a development env running
-
-Say what the step will be
+Runs on localhost:3000
 
 ```
 git clone https://github.com/andremlsantos/secfi-front-end-typescript.git
@@ -28,10 +27,10 @@ npm start
 
 ## Built With
 
-- [React]()
-- [React-Charts](http://www.dropwizard.io/1.0.2/docs/) - The chart framework used
-- [TypeScript](https://maven.apache.org/) - Dependency Management
-- [NodeJs](https://rometools.github.io/rome/) - Used to generate RSS Feeds
+- [React](https://reactjs.org/) - JavaScript library for building user interfaces. Latest version used as to date
+- [React-Charts-Js2](https://github.com/jerairrest/react-chartjs-2) - React wrapper for Chart.js 2 Open for PRs and contributions!
+- [TypeScript](https://nodejs.org/en/download/) - Main language
+- [NodeJs](https://nodejs.org/en/download/) - JavaScript runtime environment
 
 ## License
 
@@ -41,4 +40,5 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 
 - Hat tip to anyone whose code was used
 - Inspiration from TravisMedia React crash course and chart js,
-- Inspiration from CodePen repos
+- Inspiration from <a href="https://codepen.io/seanstopnik/pen/CeLqA">CodePen CSS Range Slider</a>
+- Inspiration from <a href="https://codepen.io/FlorinPop17/pen/oNNYWxK">Exchange Rate Calculator</a>
