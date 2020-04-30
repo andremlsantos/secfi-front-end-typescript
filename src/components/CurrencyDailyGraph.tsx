@@ -11,6 +11,7 @@ export class CurrencyDailyGraph extends Component<IState, ICurrencyDailyGraph> {
 
     this.state = {
       days: 30,
+      dataSetsActive: [true, true, true, true],
     };
   }
 
@@ -36,7 +37,9 @@ export class CurrencyDailyGraph extends Component<IState, ICurrencyDailyGraph> {
       datasets: [
         {
           label: "Close",
-          data: this.filterData(data.close, days),
+          data: this.state.dataSetsActive[0]
+            ? this.filterData(data.close, days)
+            : [],
           backgroundColor: ["rgba(255, 99, 132, 0.05)"],
           borderColor: "rgba(255, 99, 132, 0.8)",
           borderDash: [1],
@@ -44,28 +47,47 @@ export class CurrencyDailyGraph extends Component<IState, ICurrencyDailyGraph> {
         },
         {
           label: "Open",
-          data: this.filterData(data.open, days),
+          data: this.state.dataSetsActive[1]
+            ? this.filterData(data.open, days)
+            : [],
           backgroundColor: ["rgba(23, 99, 132, 0.05)"],
           borderColor: "rgba(23, 99, 132, 0.8)",
           borderDash: [3],
         },
         {
           label: "High",
-          data: this.filterData(data.high, days),
+          data: this.state.dataSetsActive[2]
+            ? this.filterData(data.high, days)
+            : [],
           backgroundColor: ["rgba(44, 173, 221, 0.05)"],
           borderColor: "rgba(44, 173, 221, 0.8)",
           borderDash: [7],
+          display: false,
         },
         {
           label: "Low",
-          data: this.filterData(data.low, days),
+          data: this.state.dataSetsActive[3]
+            ? this.filterData(data.low, days)
+            : [],
           backgroundColor: ["rgba(170, 161, 17, 0.05)"],
           borderColor: "rgba(170, 161, 17, 0.8)",
           borderDash: [5],
           fill: false,
+          display: false,
         },
       ],
     };
+  }
+
+  toggleDataset(e: any, legendItem: any) {
+    var index = legendItem.datasetIndex;
+
+    let dataSetsActive = this.state.dataSetsActive;
+    dataSetsActive[index] = !dataSetsActive[index];
+
+    this.setState({
+      dataSetsActive: dataSetsActive,
+    });
   }
 
   buildChartOptions() {
@@ -82,6 +104,7 @@ export class CurrencyDailyGraph extends Component<IState, ICurrencyDailyGraph> {
         labels: {
           fontColor: "#0E6D90",
         },
+        onClick: (e: any, legendItem: any) => this.toggleDataset(e, legendItem),
       },
       tooltips: {
         display: true,
